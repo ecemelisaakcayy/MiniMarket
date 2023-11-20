@@ -3,15 +3,21 @@
 
 
 @section('content')
-<div class="col-lg-6">
-    <div class="card">
-      <h4 class="card-title"><strong>Alternative</strong> thead</h4>
 
-      <div class="card-body">
-        <p><code class="code-bold">.thead-light</code> or <code class="code-bold">.thead-dark</code> applies to <em>thead</em></p>
-        <table class="table">
-          <thead class="thead-light">
-            <tr>
+<div class="main-content">
+    <div class="card">
+        <div class="card-body">
+            <div class="row">
+                <div class="col-md-6">
+                    <h4 class="card-title"><strong>Burası Meyve Ürünleri Sayfasıdır</strong></h4>
+                </div>
+                <div class="col-md-6">
+                    <a href="{{route('site.getCreateMeyve')}}" class="btn btn-w-md btn-bold btn-primary" style="float: right;"> Meyve Ekle</a>
+                </div>
+            </div>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
               <th>#</th>
               <th>First Name</th>
               <th>Last Name</th>

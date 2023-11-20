@@ -79,41 +79,30 @@
 
             <ul class="menu-submenu">
               <li class="menu-item">
-                <a class="menu-link" href="{{route('site.getSebze')}}" target="_blank">
+                <a class="menu-link" href="{{route('site.getSebze')}}">
                   <span class="dot"></span>
                   <span class="title">Sebze</span>
                 </a>
               </li>
               <li class="menu-item">
-                <a class="menu-link" href="{{route('site.getCategori')}}" target="_blank">
+                <a class="menu-link" href="{{route('site.getMeyve')}}" >
                   <span class="dot"></span>
                   <span class="title">Meyve</span>
                 </a>
               </li>
               <li class="menu-item">
-                <a class="menu-link" href="{{route('site.getEturunleri')}}" target="_blank">
+                <a class="menu-link" href="{{route('site.getEturunleri')}}" >
                   <span class="dot"></span>
                   <span class="title">Et Ürünleri</span>
                 </a>
               </li>
               <li class="menu-item">
-                <a class="menu-link" href="{{route('site.getSuturunleri')}}" target="_blank">
+                <a class="menu-link" href="{{route('site.getSuturunleri')}}" >
                   <span class="dot"></span>
                   <span class="title">Süt Ürünleri</span>
                 </a>
               </li>
-              <li class="menu-item">
-                <a class="menu-link" href="../samples/job/index.html" target="_blank">
-                  <span class="dot"></span>
-                  <span class="title">Job Management</span>
-                </a>
-              </li>
-              <li class="menu-item">
-                <a class="menu-link" href="../samples/support/index.html" target="_blank">
-                  <span class="dot"></span>
-                  <span class="title">Support System</span>
-                </a>
-              </li>
+
 
 
 
@@ -124,263 +113,6 @@
 
 
 
-          <li class="menu-category">Framework</li>
-
-
-
-
-
-
-
-
-
-
-
-          <li class="menu-item">
-            <a class="menu-link" href="#">
-              <span class="icon fa fa-check-square"></span>
-              <span class="title">Forms</span>
-              <span class="arrow"></span>
-            </a>
-
-            <ul class="menu-submenu">
-              <li class="menu-item">
-                <a class="menu-link" href="../form/input-default.html">
-                  <span class="dot"></span>
-                  <span class="title">Inputs</span>
-                </a>
-              </li>
-
-              <li class="menu-item">
-                <a class="menu-link" href="../form/control-checkbox.html">
-                  <span class="dot"></span>
-                  <span class="title">Controls</span>
-                </a>
-              </li>
-
-              <li class="menu-item">
-                <a class="menu-link" href="../form/picker-select.html">
-                  <span class="dot"></span>
-                  <span class="title">Pickers</span>
-                </a>
-              </li>
-
-              <li class="menu-item">
-                <a class="menu-link" href="../form/addon-slider.html">
-                  <span class="dot"></span>
-                  <span class="title">Addons</span>
-                </a>
-              </li>
-
-              <li class="menu-item">
-                <a class="menu-link" href="../form/upload.html">
-                  <span class="dot"></span>
-                  <span class="title">Upload</span>
-                </a>
-              </li>
-
-              <li class="menu-item">
-                <a class="menu-link" href="../form/editor-summernote.html">
-                  <span class="dot"></span>
-                  <span class="title">Editor</span>
-                </a>
-              </li>
-
-              <li class="menu-item">
-                <a class="menu-link" href="../form/lookup.html">
-                  <span class="dot"></span>
-                  <span class="title">Lookup</span>
-                </a>
-              </li>
-
-              <li class="menu-item">
-                <a class="menu-link" href="../form/publisher-single.html">
-                  <span class="dot"></span>
-                  <span class="title">Publisher</span>
-                </a>
-              </li>
-
-              <li class="menu-item">
-                <a class="menu-link" href="../form/layout.html">
-                  <span class="dot"></span>
-                  <span class="title">Layouts</span>
-                </a>
-              </li>
-
-              <li class="menu-item">
-                <a class="menu-link" href="../form/mask.html">
-                  <span class="dot"></span>
-                  <span class="title">Mask</span>
-                </a>
-              </li>
-
-              <li class="menu-item">
-                <a class="menu-link" href="../form/validation.html">
-                  <span class="dot"></span>
-                  <span class="title">Validation</span>
-                </a>
-              </li>
-
-              <li class="menu-item">
-                <a class="menu-link" href="../form/wizard.html">
-                  <span class="dot"></span>
-                  <span class="title">Wizard</span>
-                </a>
-              </li>
-            </ul>
-          </li>
-
-
-          <li class="menu-item">
-            <a class="menu-link" href="#">
-              <span class="icon fa fa-pie-chart"></span>
-              <span class="title">Charts</span>
-              <span class="arrow"></span>
-            </a>
-
-            <ul class="menu-submenu">
-              <li class="menu-item">
-                <a class="menu-link" href="../chart/chartjs.html">
-                  <span class="dot"></span>
-                  <span class="title">Chartjs</span>
-                </a>
-              </li>
-
-              <li class="menu-item">
-                <a class="menu-link" href="../chart/morris.html">
-                  <span class="dot"></span>
-                  <span class="title">Morris</span>
-                </a>
-              </li>
-
-              <li class="menu-item">
-                <a class="menu-link" href="../chart/sparkline.html">
-                  <span class="dot"></span>
-                  <span class="title">Sparkline</span>
-                </a>
-              </li>
-
-              <li class="menu-item">
-                <a class="menu-link" href="../chart/peity.html">
-                  <span class="dot"></span>
-                  <span class="title">Peity</span>
-                </a>
-              </li>
-
-              <li class="menu-item">
-                <a class="menu-link" href="../chart/easypiechart.html">
-                  <span class="dot"></span>
-                  <span class="title">Easy pie chart</span>
-                </a>
-              </li>
-            </ul>
-          </li>
-
-
-          <li class="menu-category">Pages</li>
-
-
-          <li class="menu-item">
-            <a class="menu-link" href="#">
-              <span class="icon fa fa-puzzle-piece"></span>
-              <span class="title">Widgets</span>
-              <span class="arrow"></span>
-            </a>
-
-            <ul class="menu-submenu">
-              <li class="menu-item">
-                <a class="menu-link" href="../widget/statistic.html">
-                  <span class="dot"></span>
-                  <span class="title">Statistic</span>
-                </a>
-              </li>
-
-              <li class="menu-item">
-                <a class="menu-link" href="../widget/chart.html">
-                  <span class="dot"></span>
-                  <span class="title">Chart</span>
-                </a>
-              </li>
-
-              <li class="menu-item">
-                <a class="menu-link" href="../widget/list.html">
-                  <span class="dot"></span>
-                  <span class="title">List</span>
-                </a>
-              </li>
-
-              <li class="menu-item">
-                <a class="menu-link" href="../widget/social.html">
-                  <span class="dot"></span>
-                  <span class="title">Social</span>
-                </a>
-              </li>
-
-              <li class="menu-item">
-                <a class="menu-link" href="../widget/blog.html">
-                  <span class="dot"></span>
-                  <span class="title">Blog</span>
-                </a>
-              </li>
-
-              <li class="menu-item">
-                <a class="menu-link" href="../widget/form.html">
-                  <span class="dot"></span>
-                  <span class="title">Form</span>
-                </a>
-              </li>
-
-              <li class="menu-item">
-                <a class="menu-link" href="../widget/app.html">
-                  <span class="dot"></span>
-                  <span class="title">App</span>
-                </a>
-              </li>
-            </ul>
-          </li>
-
-
-          <li class="menu-item">
-            <a class="menu-link" href="#">
-              <span class="icon ti-layout-grid3-alt"></span>
-              <span class="title">Apps</span>
-              <span class="arrow"></span>
-            </a>
-
-            <ul class="menu-submenu">
-              <li class="menu-item">
-                <a class="menu-link" href="../page-app/calendar.html">
-                  <span class="dot"></span>
-                  <span class="title">Calendar</span>
-                </a>
-              </li>
-
-              <li class="menu-item">
-                <a class="menu-link" href="../page-app/mailbox.html">
-                  <span class="dot"></span>
-                  <span class="title">Mailbox</span>
-                  <span class="badge badge-pill badge-primary">4</span>
-                </a>
-              </li>
-
-              <li class="menu-item">
-                <a class="menu-link" href="../page-app/chat.html">
-                  <span class="dot"></span>
-                  <span class="title">Chat</span>
-                </a>
-              </li>
-
-              <li class="menu-item">
-                <a class="menu-link" href="../page-app/users.html">
-                  <span class="dot"></span>
-                  <span class="title">Users</span>
-                </a>
-              </li>
-            </ul>
-          </li>
-
-
-          <li class="menu-item">
             <a class="menu-link" href="#">
               <span class="icon fa fa-file"></span>
               <span class="title">Pages</span>

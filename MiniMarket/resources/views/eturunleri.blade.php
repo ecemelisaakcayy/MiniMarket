@@ -1,16 +1,23 @@
 @extends('layouts.master')
+
+
+
 @section('content')
 
-
-<div class="col-lg-6">
+<div class="main-content">
     <div class="card">
-      <h4 class="card-title"><strong>Burası Et Ürünleri sayfası</strong></h4>
-
-      <div class="card-body">
-        <p>Tüm Et Ürünleri</p>
-        <table class="table">
-          <thead>
-            <tr>
+        <div class="card-body">
+            <div class="row">
+                <div class="col-md-6">
+                    <h4 class="card-title"><strong>Burası Et Ürünleri Sayfasıdır</strong></h4>
+                </div>
+                <div class="col-md-6">
+                    <a href="{{route('site.getCreateEt')}}" class="btn btn-w-md btn-bold btn-primary" style="float: right;"> Et Ekle</a>
+                </div>
+            </div>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
               <th>#</th>
               <th>First Name</th>
               <th>Last Name</th>
@@ -41,4 +48,6 @@
       </div>
     </div>
   </div>
+
 @endsection
+
