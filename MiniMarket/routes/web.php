@@ -16,6 +16,8 @@ Route::get('/anasayfa', 'App\Http\Controllers\SiteController@getIndex')->name('s
 Route::get('/blog', 'App\Http\Controllers\SiteController@getBlog')->name('site.getBlog');
 
 Route::get('/categori', 'App\Http\Controllers\SiteController@getCategori')->name('site.getCategori');
+Route::get('/categori-ekle', 'App\Http\Controllers\SiteController@getCreateCategori')->name('site.getCreateCategori');
+Route::post('/categori-ekle', 'App\Http\Controllers\SiteController@postCreateCategori')->name('site.postCreateCategori');
 
 Route::get('/meyve', 'App\Http\Controllers\SiteController@getMeyve')->name('site.getMeyve');
 Route::get('/meyve-ekle', 'App\Http\Controllers\SiteController@getCreateMeyve')->name('site.getCreateMeyve');
