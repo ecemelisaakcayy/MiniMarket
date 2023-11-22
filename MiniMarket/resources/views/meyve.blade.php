@@ -1,52 +1,69 @@
 @extends('layouts.master')
 
-
-
 @section('content')
-
 <div class="main-content">
     <div class="card">
         <div class="card-body">
-            <div class="row">
-                <div class="col-md-6">
-                    <h4 class="card-title"><strong>Burası Meyve Ürünleri Sayfasıdır</strong></h4>
-                </div>
-                <div class="col-md-6">
-                    <a href="{{route('site.getCreateMeyve')}}" class="btn btn-w-md btn-bold btn-primary" style="float: right;"> Meyve Ekle</a>
-                </div>
-            </div>
-            <table class="table table-bordered">
-                <thead>
-                    <tr>
-              <th>#</th>
-              <th>First Name</th>
-              <th>Last Name</th>
-              <th>Username</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th scope="row">1</th>
-              <td>Mark</td>
-              <td>Otto</td>
-              <td>@mdo</td>
-            </tr>
-            <tr>
-              <th scope="row">2</th>
-              <td>Jacob</td>
-              <td>Thornton</td>
-              <td>@fat</td>
-            </tr>
-            <tr>
-              <th scope="row">3</th>
-              <td>Larry</td>
-              <td>the Bird</td>
-              <td>@twitter</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-  </div>
+            <div class="col-lg-12">
+                <div class="card">
+                  <div class="row">
+                    <div class="col-sm-6">
+                        <h4 class="card-title"><strong>Tüm Meyveler</strong></h4>
+                    </div>
+                    <div class="col-sm-6">
+                        <a  href ="{{route('site.getCreateMeyve')}}" class="btn btn-w-md btn-bold btn-info" style="float: right">Meyve Ekle</a>
 
+                    </div>
+                  </div>
+
+                  <div class="card-body">
+                    <table class="table">
+                      <thead>
+                        <tr>
+                          <th>#</th>
+                          <th>Meyve Adı</th>
+                          <th>Eklenme Tarihi</th>
+                          <th>İşlemler</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        @foreach ($meyve as $item)
+                        <tr>
+                            <td>{{$item->id}}</td>
+                            <td>
+
+
+                                {{$item->meyve_name}}</td>
+                            <td>
+                                {{$item->created_at->format('d.m.Y')}}
+
+
+                                </td>
+                            <td>
+                                <div class="dropdown ">
+                                    <a class="text-lighter" href="#" data-toggle="dropdown" aria-expanded="true"><i class="ti-more-alt rotate-90"></i></a>
+                                    <div class="dropdown-menu dropdown-menu-right " x-placement="bottom-end" style="position: absolute; will-change: top, left; top: 19px; left: -147px;">
+                                      <a class="dropdown-item" href="{{route('site.getEditMeyve',array('id'=>$item->id))}}"><i class="fa fa-fw fa-pencil"></i> Düzenle </a>
+                                      <a class="dropdown-item" href="#"><i class="fa fa-fw fa-trash"></i> Sil</a>
+
+                                    </div>
+                                  </div>
+                            </td>
+                        </tr>
+
+                        @endforeach
+
+
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+
+
+
+</div>
+</div>
+</div>
+<a href="{{route('site.getCreateCategori')}}" class=" btn btn-sm"> Git</a>
 @endsection

@@ -72,7 +72,7 @@
             <li class="menu-item">
                 <a class="menu-link" href="#">
                   <span class="icon fa fa-tv"></span>
-                  <span class="title">Kategori</span>
+                  <span class="title">Kategori Eski </span>
                   <span class="arrow"></span>
                 </a>
 
@@ -115,31 +115,25 @@
 
             <a class="menu-link" href="#">
               <span class="icon fa fa-file"></span>
-              <span class="title">Pages</span>
+              <span class="title">Kategoriler</span>
               <span class="arrow"></span>
             </a>
 
             <ul class="menu-submenu">
               <li class="menu-item">
-                <a class="menu-link" href="../page/gallery.html">
+                <a class="menu-link" href="{{route('site.getCategori')}}">
                   <span class="dot"></span>
-                  <span class="title">Gallery</span>
+                  <span class="title">Tüm Kategoriler</span>
                 </a>
               </li>
 
               <li class="menu-item">
-                <a class="menu-link" href="../page/map-google.html">
+                <a class="menu-link" href="{{route('site.getCreateCategori')}}">
                   <span class="dot"></span>
-                  <span class="title">Map</span>
+                  <span class="title">Kategori Ekle</span>
                 </a>
               </li>
 
-              <li class="menu-item">
-                <a class="menu-link" href="../page/profile.html">
-                  <span class="dot"></span>
-                  <span class="title">Profile</span>
-                </a>
-              </li>
 
               <li class="menu-item">
                 <a class="menu-link" href="../page/pricing.html">
@@ -152,6 +146,43 @@
 
 
         </ul>
+        <a class="menu-link" href="#">
+            <span class="icon fa fa-file"></span>
+            <span class="title">Meyveler</span>
+            <span class="arrow"></span>
+          </a>
+
+          <ul class="menu-submenu">
+            <li class="menu-item">
+              <a class="menu-link" href="{{route('site.getMeyve')}}">
+                <span class="dot"></span>
+                <span class="title">Tüm Meyveler</span>
+              </a>
+            </li>
+
+            <li class="menu-item">
+              <a class="menu-link" href="{{route('site.getCreateMeyve')}}">
+                <span class="dot"></span>
+                <span class="title">Meyve Ekle</span>
+              </a>
+            </li>
+
+
+            <li class="menu-item">
+              <a class="menu-link" href="../page/pricing.html">
+                <span class="dot"></span>
+                <span class="title">Pricing</span>
+              </a>
+            </li>
+
+
+
+
+      </ul>
+
+
+
+
       </nav>
 
     </aside>

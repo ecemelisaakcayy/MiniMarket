@@ -18,10 +18,14 @@ Route::get('/blog', 'App\Http\Controllers\SiteController@getBlog')->name('site.g
 Route::get('/categori', 'App\Http\Controllers\SiteController@getCategori')->name('site.getCategori');
 Route::get('/categori-ekle', 'App\Http\Controllers\SiteController@getCreateCategori')->name('site.getCreateCategori');
 Route::post('/categori-ekle', 'App\Http\Controllers\SiteController@postCreateCategori')->name('site.postCreateCategori');
+Route::get('/categori-duzenle', 'App\Http\Controllers\SiteController@getEditCategori')->name('site.getEditCategori');
+Route::post('/categori-duzenle', 'App\Http\Controllers\SiteController@postEditCategori')->name('site.postEditCategori');
 
 Route::get('/meyve', 'App\Http\Controllers\SiteController@getMeyve')->name('site.getMeyve');
 Route::get('/meyve-ekle', 'App\Http\Controllers\SiteController@getCreateMeyve')->name('site.getCreateMeyve');
 Route::post('/meyve-ekle', 'App\Http\Controllers\SiteController@postCreateMeyve')->name('site.postCreateMeyve');
+Route::get('/meyve-duzenle', 'App\Http\Controllers\SiteController@getEditMeyve')->name('site.getEditMeyve');
+Route::post('/meyve-duzenle', 'App\Http\Controllers\SiteController@postEditMeyve')->name('site.postEditMeyve');
 
 Route::get('/sebze-goruntule', 'App\Http\Controllers\SiteController@getSebze')->name('site.getSebze');
 Route::get('/sebze-ekle', 'App\Http\Controllers\SiteController@getCreateSebze')->name('site.getCreateSebze');

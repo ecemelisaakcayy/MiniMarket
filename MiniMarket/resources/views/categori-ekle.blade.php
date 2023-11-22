@@ -3,11 +3,18 @@
 <div class="main-content">
     <div class="card">
         <div class="card-body">
+            <!--
+
+                action > gideceğim adresi belirtirim
+                method > göndereceğim methodu  belirtirim
+
+
+            -->
            <form action="{{route('site.postCreateCategori')}}" method="POST">
             @csrf
             <div class="form-group">
                 <label for="input-normal">Normal input</label>
-                <input type="text" class="form-control" id="input-normal"  name="categori_name">
+                <input type="text" class="form-control" id="input-normal" required  name="categori_name">
               </div>
               <button type="submit" class="btn btn-sm btn-info"> Ekle</button>
            </form>

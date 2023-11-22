@@ -22,6 +22,7 @@
                         <tr>
                           <th>#</th>
                           <th>Kategori Adı</th>
+                          <th>Eklenme Tarihi</th>
                           <th>İşlemler</th>
                         </tr>
                       </thead>
@@ -29,8 +30,22 @@
                         @foreach ($categori as $item)
                         <tr>
                             <td>{{$item->id}}</td>
-                            <td>{{$item->categori_name}}</td>
-                            <td>Düzenlenecek</td>
+                            <td>
+
+
+
+                                {{$item->categori_name}}</td>
+                            <td>{{$item->created_at->format('d.m.Y')}}</td>
+                            <td>
+                                <div class="dropdown ">
+                                    <a class="text-lighter" href="#" data-toggle="dropdown" aria-expanded="true"><i class="ti-more-alt rotate-90"></i></a>
+                                    <div class="dropdown-menu dropdown-menu-right " x-placement="bottom-end" style="position: absolute; will-change: top, left; top: 19px; left: -147px;">
+                                      <a class="dropdown-item" href="{{route('site.getEditCategori',array('id'=>$item->id))}}"><i class="fa fa-fw fa-pencil"></i> Düzenle </a>
+                                      <a class="dropdown-item" href="#"><i class="fa fa-fw fa-trash"></i> Sil</a>
+
+                                    </div>
+                                  </div>
+                            </td>
                         </tr>
 
                         @endforeach
