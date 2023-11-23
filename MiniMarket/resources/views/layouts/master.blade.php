@@ -90,22 +90,6 @@
                   <span class="title">Meyve</span>
                 </a>
               </li>
-              <li class="menu-item">
-                <a class="menu-link" href="{{route('site.getEturunleri')}}" >
-                  <span class="dot"></span>
-                  <span class="title">Et Ürünleri</span>
-                </a>
-              </li>
-              <li class="menu-item">
-                <a class="menu-link" href="{{route('site.getSuturunleri')}}" >
-                  <span class="dot"></span>
-                  <span class="title">Süt Ürünleri</span>
-                </a>
-              </li>
-
-
-
-
 
 
             </ul>
@@ -168,17 +152,89 @@
             </li>
 
 
+
+
+      </ul>
+
+
+        <a class="menu-link" href="#">
+            <span class="icon fa fa-file"></span>
+            <span class="title">Et Ürünleri</span>
+            <span class="arrow"></span>
+        </a>
+
+        <ul class="menu-submenu">
             <li class="menu-item">
-              <a class="menu-link" href="../page/pricing.html">
+            <a class="menu-link" href="{{route('site.getEt')}}">
                 <span class="dot"></span>
-                <span class="title">Pricing</span>
-              </a>
+                <span class="title">Tüm Et Ürünleri</span>
+            </a>
+            </li>
+
+            <li class="menu-item">
+            <a class="menu-link" href="{{route('site.getCreateEt')}}">
+                <span class="dot"></span>
+                <span class="title">Et Ürünleri Ekle</span>
+            </a>
             </li>
 
 
 
+     </ul>
 
-      </ul>
+     <a class="menu-link" href="#">
+        <span class="icon fa fa-file"></span>
+        <span class="title">Sebze Ürünleri</span>
+        <span class="arrow"></span>
+    </a>
+
+    <ul class="menu-submenu">
+        <li class="menu-item">
+        <a class="menu-link" href="{{route('site.getSebze')}}">
+            <span class="dot"></span>
+            <span class="title">Tüm Sebze Ürünleri</span>
+        </a>
+        </li>
+
+        <li class="menu-item">
+        <a class="menu-link" href="{{route('site.getCreateSebze')}}">
+            <span class="dot"></span>
+            <span class="title">Sebze Ürünleri Ekle</span>
+        </a>
+        </li>
+
+
+
+ </ul>
+
+ <a class="menu-link" href="#">
+    <span class="icon fa fa-file"></span>
+    <span class="title">Süt Ürünleri</span>
+    <span class="arrow"></span>
+</a>
+
+<ul class="menu-submenu">
+    <li class="menu-item">
+    <a class="menu-link" href="{{route('site.getSut')}}">
+        <span class="dot"></span>
+        <span class="title">Tüm Süt Ürünleri</span>
+    </a>
+    </li>
+
+    <li class="menu-item">
+    <a class="menu-link" href="{{route('site.getCreateSut')}}">
+        <span class="dot"></span>
+        <span class="title">Süt Ürünleri Ekle</span>
+    </a>
+    </li>
+
+
+
+</ul>
+
+
+
+
 
 
 

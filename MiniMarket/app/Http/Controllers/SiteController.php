@@ -4,6 +4,9 @@ namespace App\Http\Controllers;
 
 use App\Models\Categori;
 use App\Models\Meyve;
+use App\Models\Et;
+use App\Models\Sebze;
+use App\Models\Sut;
 use App\Models\Site;
 
 use Illuminate\Http\Request;
@@ -81,7 +84,8 @@ class SiteController extends Controller
 
     public function getSebze(Request $request)
     {
-        return view('sebze');
+        $sebze = Sebze::all();
+        return view('sebze',compact('sebze'));
     }
     public function getCreateSebze(Request $request)
     {
@@ -89,40 +93,112 @@ class SiteController extends Controller
     }
     public function postCreateSebze(Request $request)
     {
-        dd('buraya geldim sebze');
+        $sebze= new Sebze();
+        $sebze->create($request->all());
+        return redirect()->route('site.getSebze');
     }
-
-
-
-
-
-
-    public function getEturunleri(Request $request)
+    public function postEditSebze(Request $request)
     {
-        return view('eturunleri');
+        $sebzebul = Sebze::find($request->id);
+        $sebzebul->update($request->all());
+        return redirect()->route('site.getSebze');
     }
+    public function getEditSebze(Request $request)
+    {
+        $find = Sebze::find($request->id);
+        return view('sebze-duzenle',compact('find'));
+    }
+
+
+
+
+
+
     public function getCreateEt(Request $request)
     {
         return view('et-ekle');
     }
+    public function getEt ( Request $request)
+    {
+        $et =Et::all();
+        return view('et',compact('et'));
+    }
     public function postCreateEt(Request $request)
     {
-        dd('buraya geldim Et');
+        $et= new Et();
+        $et->create($request->all());
+        return redirect()->route('site.getCategori');
+    }
+
+    public function getEditEt(Request $request)
+    {
+
+
+        $find = Et::find($request->id);
+        return view('et-duzenle', compact('find'));
     }
 
 
-    public function getSuturunleri(Request $request)
+    public function postEditEt(Request $request)
     {
-        return view('suturunleri');
+
+        $etbul = Et::find($request->id);
+
+        $etbul->update($request->all());
+
+        return redirect()->route('site.getEt');
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+    public function getSut(Request $request)
+    {
+        $sut = Sut::all();
+        return view('sut',compact('sut'));
+
     }
     public function getCreateSut(Request $request)
     {
         return view('sut-ekle');
     }
+    public function getEditSut(Request $request)
+    {
+        $find = Sut::find($request->id);
+        return view('sut-duzenle', compact('find'));
+    }
+    public function postEditSut(Request $request)
+    {
+        $sutbul= Sut::find($request->id);
+        $sutbul->update($request->all());
+        return redirect()->route('site.getSut');
+    }
     public function postCreateSut(Request $request)
     {
-        dd('buraya geldim sut');
+        $sut = new Sut();
+        $sut->create($request->all());
+        return redirect()->route('site.getSut');
     }
+
+
+
+
+
+
+
+
+
 
 
 
