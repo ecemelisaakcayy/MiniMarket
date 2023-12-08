@@ -15,7 +15,7 @@
 
             <div class="form-group">
                 <label for="input-normal">Normal input</label>
-                <input type="text" class="form-control" id="input-normal"  name="categori_name" value="{{ $find->sut_name}}">
+                <input type="text" class="form-control" id="input-normal"  name="sut_name" value="{{ $find->sut_name}}">
                 <input type="hidden" value="{{$find->id}}" name="id">
               </div>
               <button type="submit" class="btn btn-sm btn-info"> Ekle</button>

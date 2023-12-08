@@ -27,7 +27,7 @@ Route::post('/meyve-ekle', 'App\Http\Controllers\SiteController@postCreateMeyve'
 Route::get('/meyve-duzenle', 'App\Http\Controllers\SiteController@getEditMeyve')->name('site.getEditMeyve');
 Route::post('/meyve-duzenle', 'App\Http\Controllers\SiteController@postEditMeyve')->name('site.postEditMeyve');
 
-Route::get('/sebze-goruntule', 'App\Http\Controllers\SiteController@getSebze')->name('site.getSebze');
+Route::get('/sebze', 'App\Http\Controllers\SiteController@getSebze')->name('site.getSebze');
 Route::get('/sebze-ekle', 'App\Http\Controllers\SiteController@getCreateSebze')->name('site.getCreateSebze');
 Route::post('/sebze-ekle', 'App\Http\Controllers\SiteController@postCreateSebze')->name('site.postCreateSebze');
 Route::get('/sebze-duzenle', 'App\Http\Controllers\SiteController@getEditSebze')->name('site.getEditSebze');
@@ -44,4 +44,10 @@ Route::get('/sut-ekle', 'App\Http\Controllers\SiteController@getCreateSut')->nam
 Route::post('/sut-ekle', 'App\Http\Controllers\SiteController@postCreateSut')->name('site.postCreateSut');
 Route::get('/sut-duzenle', 'App\Http\Controllers\SiteController@getEditSut')->name('site.getEditSut');
 Route::post('/sut-duzenle', 'App\Http\Controllers\SiteController@postEditSut')->name('site.postEditSut');
+
+Route::get('/kiyafet', 'App\Http\Controllers\SiteController@getKiyafet')->name('site.getKiyafet');
+Route::get('/kiyafet-ekle', 'App\Http\Controllers\SiteController@getCreateKiyafet')->name('site.getCreateKiyafet');
+Route::post('/kiyafet-ekle', 'App\Http\Controllers\SiteController@postCreateKiyafet')->name('site.postCreateKiyafet');
+Route::get('/kiyafet-duzenle', 'App\Http\Controllers\SiteController@getEditKiyafet')->name('site.getEditKiyafet');
+Route::post('/kiyafet-duzenle', 'App\Http\Controllers\SiteController@postEditKiyafet')->name('site.postEditKiyafet');
 

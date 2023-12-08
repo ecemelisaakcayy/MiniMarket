@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Et extends Model
 {
     protected $table = "et";
-    protected $fillable  =['et_name'];
+    protected $fillable  = ['et_name'];
 
 
 }

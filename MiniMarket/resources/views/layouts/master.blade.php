@@ -91,6 +91,13 @@
                 </a>
               </li>
 
+              <li class="menu-item">
+                <a class="menu-link" href="{{route('site.getKiyafet')}}" >
+                  <span class="dot"></span>
+                  <span class="title">Kıyafet</span>
+                </a>
+              </li>
+
 
             </ul>
           </li>
@@ -231,6 +238,31 @@
 
 
 </ul>
+<a class="menu-link" href="#">
+    <span class="icon fa fa-file"></span>
+    <span class="title">Kıyafetler</span>
+    <span class="arrow"></span>
+</a>
+
+<ul class="menu-submenu">
+    <li class="menu-item">
+    <a class="menu-link" href="{{route('site.getKiyafet')}}">
+        <span class="dot"></span>
+        <span class="title">Kıyafetler</span>
+    </a>
+    </li>
+
+    <li class="menu-item">
+    <a class="menu-link" href="{{route('site.getCreateKiyafet')}}">
+        <span class="dot"></span>
+        <span class="title">Kıyafet Ekle</span>
+    </a>
+    </li>
+
+
+
+</ul>
+
 
 
 

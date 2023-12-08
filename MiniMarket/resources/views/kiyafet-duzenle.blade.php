@@ -10,11 +10,13 @@
 
 
             -->
-           <form action="{{route('site.postCreateSut')}}" method="POST">
+           <form action="{{route('site.postEditKiyafet')}}" method="POST">
             @csrf
+
             <div class="form-group">
                 <label for="input-normal">Normal input</label>
-                <input type="text" class="form-control" id="input-normal" required  name="sut_name">
+                <input type="text" class="form-control" id="input-normal"  name="kiyafet_name" value="{{$find->kiyafet_name}}">
+                <input type="hidden" value="{{$find->id}}" name="id">
               </div>
               <button type="submit" class="btn btn-sm btn-info"> Ekle</button>
            </form>

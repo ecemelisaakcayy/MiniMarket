@@ -7,6 +7,7 @@ use App\Models\Meyve;
 use App\Models\Et;
 use App\Models\Sebze;
 use App\Models\Sut;
+use App\Models\Kiyafet;
 use App\Models\Site;
 
 use Illuminate\Http\Request;
@@ -127,7 +128,7 @@ class SiteController extends Controller
     {
         $et= new Et();
         $et->create($request->all());
-        return redirect()->route('site.getCategori');
+        return redirect()->route('site.getEt');
     }
 
     public function getEditEt(Request $request)
@@ -143,6 +144,7 @@ class SiteController extends Controller
     {
 
         $etbul = Et::find($request->id);
+
 
         $etbul->update($request->all());
 
@@ -246,4 +248,37 @@ class SiteController extends Controller
         //return redirect()->back();
         return redirect()->route('site.getCategori');
     }
+
+
+
+    public function getKiyafet(Request $request)
+    {
+        $kiyafet = Kiyafet::all();
+        return view('kiyafet',compact('kiyafet'));
+    }
+    public function getCreateKiyafet(Request $request)
+    {
+        return view('kiyafet-ekle');
+    }
+    public function getEditKiyafet(Request $request)
+    {
+        $find = Kiyafet::find($request->id);
+        return view('kiyafet-duzenle', compact('find'));
+    }
+    public function postEditKiyafet(Request $request)
+    {
+        $kiyafetbul = Kiyafet::find($request->id);
+        $kiyafetbul -> update($request->all);
+
+    }
+    public function postCreateKiyafet(Request $request)
+    {
+        $kiyafet = new Kiyafet();
+        $kiyafet -> create($request->all());
+        return redirect()->route('site.getKiyafet');
+
+    }
 }
+
+
+
